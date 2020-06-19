@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import 'styles/reset.css'
 import 'styles/border.css'
+// 引入iconfont
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 
