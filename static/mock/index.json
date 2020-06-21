@@ -4,13 +4,23 @@
     "city": "大连",
     "swiperList": [
       {
-        "id": "0001",
-        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20206/c744a7145c32dfcf7a46a72d0507c314.png_750x200_502ee797.png",
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg",
         "msg": ""
       },
       {
-        "id": "0002",
-        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20206/4116a228f2f7f5e9452af998c66221d2.jpg_750x200_2e5eaf6d.jpg",
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg",
+        "msg": ""
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg",
+        "msg": ""
+      },
+      {
+        "id": "0006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg",
         "msg": ""
       }
     ],

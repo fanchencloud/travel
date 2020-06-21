@@ -42,7 +42,7 @@ export default {
     overflow hidden
     width 100%
     height 0
-    padding-bottom 26.6%
+    padding-bottom 30%
     background #eee
 
     .swipe-img
