@@ -24,7 +24,7 @@
         </div>
       </li>
     </ul>
-    <a class="recommend-like-more mp-border-top" href="#">查看所有产品</a>
+    <a class="recommend-like-more mp-border-top border-bottom" href="#">查看所有产品</a>
   </div>
 </template>
 
