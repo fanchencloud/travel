@@ -31,80 +31,8 @@
 <script>
 export default {
   name: 'Recommend',
-  data () {
-    return {
-      recommendItemList: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1808/d8/d89ec1b26e92573ea3.water.jpg_250x250_279fe3a3.jpg',
-          title: '海昌发现王国',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 110
-        }, {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1910/80/805d5dc05ab054c2a3.img.jpg_250x250_fac513cc.jpg',
-          title: '大连森林动物园',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 113
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_250x250_1ab31e91.jpg',
-          title: '大连圣亚海洋世界',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 91.9
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1807/7d/7d64de6b134d10eaa3.img.jpg_250x250_cffc949b.jpg',
-          title: '老虎滩海洋公园',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 186.8
-        },
-        {
-          id: '0005',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1806/45/45ccfdd35235422ba3.img.jpg_250x250_dd83115f.jpg',
-          title: '大连三寰牧场',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 44
-        },
-        {
-          id: '0006',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1409/02/f27c6e58008d1ac501e898f38c1cc780.jpg_250x250_13b6346e.jpg',
-          title: '大连铭湖国际观光牧场',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 44
-        },
-        {
-          id: '0007',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/201405/28/69b4cfccb4eadbcdfd0a7b4cbd8860a0.jpg_250x250_8e282843.jpg',
-          title: '大连英歌石植物园',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 28.5
-        },
-        {
-          id: '0008',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/201301/07/f490e9cfe240b37f93835fbb.png_250x250_36bd5155.png',
-          title: '闯关东影视城',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 55.5
-        },
-        {
-          id: '0009',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1705/d5/d5e8181d3c951f1ca3.water.jpg_250x250_be7dafc2.jpg',
-          title: '星海湾跨海大桥',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 19
-        },
-        {
-          id: '0010',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/201406/23/e33a3fcb8a1eed5ecab853f86d4cc39f.jpg_250x250_08c56879.jpg',
-          title: '金石滩旅游度假区',
-          description: ' 浪漫大连首站，浪漫的海洋主题乐园',
-          price: 39
-        }
-      ]
-    }
+  props: {
+    recommendItemList: Array
   }
 }
 </script>

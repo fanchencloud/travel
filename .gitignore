@@ -4,6 +4,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# 将忽略自己在本地mock的数据，（开发中）不提交到仓库，因为项目展示，代码会提交
+!static/mock
 
 # Editor directories and files
 .idea

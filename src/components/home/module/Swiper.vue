@@ -20,23 +20,15 @@ export default {
     swiper,
     swiperSlide
   },
+  props: {
+    swiperList: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true
-      },
-      swiperList: [
-        {
-          id: '0001',
-          imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20206/c744a7145c32dfcf7a46a72d0507c314.png_750x200_502ee797.png',
-          msg: ''
-        }, {
-          id: '0002',
-          imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20206/4116a228f2f7f5e9452af998c66221d2.jpg_750x200_2e5eaf6d.jpg',
-          msg: ''
-        }
-      ]
+      }
     }
   }
 }
