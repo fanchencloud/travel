@@ -1,6 +1,6 @@
 <template>
   <div class="top-container">
-    <HomeHeader></HomeHeader>
+    <home-header></home-header>
     <home-swiper></home-swiper>
     <home-icon></home-icon>
     <home-top-list></home-top-list>
