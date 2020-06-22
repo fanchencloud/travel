@@ -17,16 +17,19 @@
 </template>
 
 <script>
+import {mapState} from 'Vuex'
+
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "~styles/varibles.styl"
+  @import "~styles/mixins.styl"
   .home-header
     display flex
     line-height 0.86rem
@@ -53,7 +56,8 @@ export default {
       color #ccc
 
     .home-header-right
-      width 1.24rem
+      min-width 1.04rem
+      padding 0.1rem
       float right
       text-align center
       color white
