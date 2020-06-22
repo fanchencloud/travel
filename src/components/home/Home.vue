@@ -17,6 +17,7 @@ import HomeTopList from './module/HomeTopList'
 import HomeRecommend from './module/Recommend'
 import HomeWeekend from './module/Weekend'
 import axios from 'axios'
+import {mapState} from 'Vuex'
 
 export default {
   name: 'Home',
@@ -30,6 +31,7 @@ export default {
   },
   data () {
     return {
+      lastCity: '',
       swiperList: [],
       iconItemList: [],
       hotSaleItemList: [],
@@ -38,11 +40,12 @@ export default {
     }
   },
   mounted () {
+    this.lastCity = this.city
     this.getHomePageInfo()
   },
   methods: {
     getHomePageInfo () {
-      axios.get('/api/index.json').then(this.getHomePageInfoSuccess)
+      axios.get('/api/index.json?city=' + this.city).then(this.getHomePageInfoSuccess)
     },
     getHomePageInfoSuccess (res) {
       res = res.data
@@ -54,6 +57,15 @@ export default {
         this.recommendItemList = data.recommendItemList
         this.weekendProductList = data.weekendProductList
       }
+    }
+  },
+  computed: {
+    ...mapState(['city'])
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getHomePageInfo()
     }
   }
 }
