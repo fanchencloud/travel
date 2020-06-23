@@ -13,7 +13,10 @@
       <span class="recommend-title-text">猜你喜欢</span>
     </div>
     <ul>
-      <li class="recommend-item border-bottom" v-for="item of recommendItemList" :key="item.id">
+      <router-link tag="li"
+                   :to="'/detail/' + item.id"
+                   class="recommend-item border-bottom"
+                   v-for="item of recommendItemList" :key="item.id">
         <div class="recommend-item-wrapper">
           <img class="recommend-item-wrapper-img" :src="item.imgUrl" :alt="item.title"/>
         </div>
@@ -22,7 +25,7 @@
           <p class="recommend-item-presentation">{{item.description}}</p>
           <button class="recommend-item-detail">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
     <a class="recommend-like-more mp-border-top border-bottom" href="#">查看所有产品</a>
   </div>

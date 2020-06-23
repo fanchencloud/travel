@@ -8,7 +8,8 @@
 <template>
   <div class="cityList wrapper" ref="wrapper">
     <div class="content">
-      <city-display :title="currentCity.title"
+      <city-display v-if="flag"
+                    :title="currentCity.title"
                     :num="currentCity.number"
                     :cityList="currentCity.cityList">
       </city-display>
@@ -37,15 +38,16 @@ export default {
   },
   data () {
     return {
+      flag: true,
       currentCity: {
-        'cityList': [
+        cityList: [
           {
-            'id': 1,
-            'name': this.currentCityName,
-            'title': '去哪儿门票'
+            id: 1,
+            name: this.currentCityName,
+            title: '去哪儿门票'
           }],
-        'number': 1,
-        'title': '当前城市'
+        number: 1,
+        title: '当前城市'
       }
     }
   },
@@ -54,11 +56,21 @@ export default {
       currentCityName: 'city'
     })
   },
+  mounted () {
+    this.currentCity.cityList[0].name = this.currentCityName
+  },
   updated () {
     this.$nextTick(() => {
       let wrapper = document.querySelector('.wrapper')
       this.scroll = new BScroll(wrapper, {mouseWheel: true, click: true, tap: true})
     })
+    console.log('cityName  = ' + this.city)
+  },
+  watch: {
+    currentCityName: function (newValue, old) {
+      console.log('changed : ' + old + ' --> ' + newValue)
+      this.currentCity.cityList[0].name = newValue
+    }
   }
 }
 </script>
