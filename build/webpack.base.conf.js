@@ -37,6 +37,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'styles': resolve('src/assets/styles'),
+      // 添加common组件目录的别名
+      'common': resolve('src/common'),
     }
   },
   module: {
