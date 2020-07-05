@@ -40,7 +40,7 @@ export default {
     position relative
     overflow hidden
     height $cityHeadHeight
-    line-height $cityHeadHeight
+    line-height $HeadHeight
     text-align center
     background $bgColor
     font-size 0.32rem
