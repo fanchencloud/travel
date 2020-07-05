@@ -79,7 +79,7 @@ export default {
   @import "~styles/varibles.styl"
   .cityList
     position absolute
-    top $cityHeadHeight
+    top $HeadHeight
     left 0
     right 0
     bottom 0

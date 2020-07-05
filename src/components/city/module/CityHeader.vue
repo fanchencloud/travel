@@ -30,8 +30,8 @@ export default {
     width 0.64rem
     text-align center
     font-size 0.4rem
-    height $cityHeadHeight
-    line-height $cityHeadHeight
+    height $HeadHeight
+    line-height $HeadHeight
 
   .back-icon
     color white
@@ -39,7 +39,7 @@ export default {
   .city-header-title
     position relative
     overflow hidden
-    height $cityHeadHeight
+    height $HeadHeight
     line-height $HeadHeight
     text-align center
     background $bgColor
